@@ -1,0 +1,734 @@
+<html><head>
+<meta charset="utf-8">
+<link href="http://ss.jiaobu365.com/home/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://ss.jiaobu365.com/home/css/style_header.css" rel="stylesheet" type="text/css">
+<link href="http://ss.jiaobu365.com/home/css/resume_base.css" rel="stylesheet" type="text/css">
+
+<link href="http://ss.jiaobu365.com/home/css/resume_209.css" rel="stylesheet" type="text/css">
+<script src="http://ss.jiaobu365.com/layer/layer.js"></script><link rel="stylesheet" href="http://ss.jiaobu365.com/layer/skin/layer.css" id="layui_layer_skinlayercss">
+<style>
+.baseStyle .baseBorder:hover { border: 1px dashed rgba(141, 165, 252, 0)}
+.baseStyle .positonDiv:hover {border: 1px dashed rgba(141, 165, 252, 0);}
+
+
+.resume_drag{position:absolute !important;z-index:99;width:200px;height:100px;top:50px;left:40%;padding:0 !important;}
+.resume_image{width:auto;height:auto;top:0;left:0;}
+.resume_image .ui-icon-gripsmall-diagonal-se{display:none !important;}
+.resume_image img{display:block;width:100%;height:100%}
+.resume_textarea{top:200px;left:60%;}
+.resume_textarea div.textarea{background:#none;font-size:16px;width:100%;height:100%;}
+.resume_textarea.on div.textarea{border:2px solid #4dafda;background:#fff;}
+.resume_textarea .ui-icon-gripsmall-diagonal-se{display:none !important;}
+
+
+.dispage_dialog_box{width:610px;height:300px;background:#fff; display:none;}
+.dialog_body{padding-top:40px}
+.dialog_body .chooseWay li:nth-child(1){border-right:1px solid #dddcdc;}
+.dialog_body .chooseWay li{float:left;width:49%;text-align: center;color:#ababab;font-size:12px;padding-top:10px;}
+.dialog_body .chooseWay li a{height:42px;line-height:42px;font-size:14px;width:158px;border-radius:8px;background:transparent;border:1px solid #65bfe2;display: block;text-align: center;color:#65bfe2;margin:35px auto 10px auto;}
+.dialog_body .chooseWay li a:hover,.dialog_body .chooseWay li a:focus,.dialog_body .chooseWay li a:active{color:#fff;background:#65bfe2;}
+.dialog_body .chooseWay li .span_bg1{width:110px;height:125px;display: block;margin:0 auto;background:url(http://ss.jiaobu365.com/home/images/pdf.png) no-repeat;}
+.dialog_body .chooseWay li .span_bg2{width:110px;height:125px;display: block;margin:0 auto;background:url(http://ss.jiaobu365.com/home/images/jpg.png) no-repeat;}
+</style>
+</head>
+<body class="bodybg">
+<div class="resume_html" id="resume01">
+<div class="baseStyle clearfix jm0088_j1" id="resume_body" style="height: 1556px;">
+		
+			<!----插入的内容----->
+									
+			<div class="divLeft clearfix" id="bar">
+				
+				<div id="bar_sort"></div>
+				<!--头像-->
+				<div class="headDiv" id="resume_is_avatar">
+	
+	<input type="hidden" id="small_avatar" value="http://img.jiaobu365.com/shearphoto/shearphoto_file/20170502/shearphoto_5907fe0679e43_788_avatar.jpg" readonly="readonly">
+	<img src="http://img.jiaobu365.com/shearphoto/shearphoto_file/20170502/shearphoto_5907fe0679e43_788_avatar.jpg" id="update_avatar" class="resume_msg" for-key="avatar" for-type="src" width="100%" height="100%">
+</div>
+				<!--姓名、求职意向-->
+				<div class="nameDiv positonDiv" id="resume_name">			
+	<h1>
+		<div class="resume_msg baseBorder resume_notice resume_lang_name" notice-key="msg" for-key="user_name" for-type="html" contenteditable="false">王英迪</div>
+	</h1>
+	<h2>
+		<div class="resume_msg baseBorder resume_notice resume_lang_job" notice-key="job" for-key="objective" for-type="html" contenteditable="false">求职目标：Android开发工程师</div>
+	</h2>
+</div>
+				<!--基本信息-->
+				<div class="msgDiv positonDiv clearfix resume_add_area resume_sort" id="resume_msg">
+	
+	<div class="baseAge baseMsg baseDel" id="resume_is_age">
+		<div class="delete resume_hidden" for-id="resume_is_age"></div>
+		<a class=" icon wbdfont" for-id="age" style="font-size:none"></a>
+		<input class="baseBorder resume_msg resume_lang_age" for-key="age" for-type="val" placeholder="年龄/生日" value="25岁" maxlength="10" readonly="readonly">
+	</div>
+	<div class="baseAddress baseMsg baseDel" id="resume_is_address">
+		<div class="delete resume_hidden" for-id="resume_is_address"></div>
+		<a class=" icon wbdfont" for-id="address" style="font-size:none"></a>
+		<input class="resume_msg baseBorder resume_lang_address" for-key="address" for-type="val" placeholder="联系地址" value="北京市海淀区" maxlength="25" readonly="readonly">
+	</div>
+	<div class="baseMobile baseMsg baseDel" id="resume_is_phone">
+		<div class="delete resume_hidden" for-id="resume_is_phone"></div>
+		<a class=" icon wbdfont" for-id="phone" style="font-size:none"></a>
+		<input class="resume_msg baseBorder resume_lang_mobile" for-key="phone" for-type="val" placeholder="联系电话" value="18301202109" maxlength="20" readonly="readonly">
+	</div>
+	<div class="baseEmail baseMsg baseDel" id="resume_is_email">
+		<div class="delete resume_hidden" for-id="resume_is_email"></div>
+		<a class=" icon wbdfont" for-id="email" style="font-size:none"></a>
+		<input class="resume_msg baseBorder resume_lang_email" for-key="email" for-type="val" placeholder="电子邮箱" value="wangyingdi000@sina.com" maxlength="25" readonly="readonly">
+	</div>
+	</div>					
+			</div>
+			<div class="divRight clearfix resume_main" id="foo">					
+				<div id="foo_sort"></div>	
+				
+				<div class="eduDiv baseItem positonDiv clearfix resume_item resume_add_area resume_sort resume_notice" notice-key="edu" id="resume_edu">
+	
+	<dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="edu" style="font-size:none"></a>
+			<span><div class="resume_lang_edu" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">教育背景</div><div class="Border resume_line" for-id="edu"></div></span>
+		</dt>
+		<dd class="resume_append_area" for-model="education">
+			<div class="baseContent baseDel resume_item_items resume_delete_area education_ education_0" for-id="960627">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="education_msg baseBorder" for-key="ed_time" contenteditable="false">2011.9-2015.7</div></span>
+					<span class="conTitle_company"><div class="education_msg baseBorder" for-key="ed_name" contenteditable="false">辽宁工程技术大学</div></span>
+					<span class="conTitle_post"><div class="education_msg baseBorder" for-key="ed_major" contenteditable="false">软件工程（本科）</div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					
+					<div class="conDisc baseBorder baseDel education_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="ed_content">
+					<p>主修课程：</p><p>java 数据库 数据结构 软件工程 </p>					</div>
+				</div>
+			</div>		</dd>
+	</dl>
+</div>
+										<div class="cartDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="cert" id="resume_skill" for-key="cart">
+	
+	<dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="cart" style="font-size:none"></a>
+			<span><div class="resume_lang_cart" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">技能评价</div><div class="Border resume_line" for-id="cart"></div></span>
+		</dt>
+		<dd>
+			<div class="baseContent">
+				<div class="conDisc baseBorder resume_lang_cert_value skill_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="skill_content" for-id="888165">
+					<div>1、具备扎实java基础,良好的编程思维和习惯；<br></div><div>2、熟悉常用Android框架；<br></div><div>3、精通Android平台UI设计，熟悉Material Design效果；<br></div><div>4、熟悉packer-ng多渠道打包，统计分析，错误收集；<br></div><div>5、熟悉Weex和Rn，精通Web和原生对接；</div><div>6、熟悉Android下网络通信机制</div><div>7、精通svngit、精通AS；</div><div>8、一本院校，一本软件工程专业毕业，具有扎实的编程思想；</div>				</div>
+			</div>
+		</dd>
+	</dl>
+</div>
+										<div class="campusDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="campus" id="resume_campus" style="display:none;">
+	
+	<dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="campus" style="font-size:none"></a>
+			<span><div class="resume_lang_in_school" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">校内实践</div><div class="Border resume_line" for-id="campus"></div></span>
+		</dt>
+		<dd class="resume_append_area" for-model="campus">
+			<div class="baseContent baseDel resume_item_items resume_delete_area campus_ campus_0" for-id="">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="campus_msg baseBorder" contenteditable="false" for-key="campus_time">2011.09-2013.06</div></span>
+					<span class="conTitle_company"><div class="campus_msg baseBorder" contenteditable="false" for-key="campus_name">脚步网科技大学</div></span>
+					<span class="conTitle_post"><div class="campus_msg baseBorder" contenteditable="false" for-key="campus_job">文化实习生</div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					
+					<div class="conDisc baseBorder campus_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="campus_content">
+					<p>即将参与产品开发，广告创意策划，市即将参与产品开发，广告创意策划，市场分析，销售数据分析，与地区分公司，公关部门及广告公司协调广告概念等相关事宜。场分析，销售数据分析，与地区分公司，公关部门及广告公司协调广告概念等相关事宜。</p>					</div>
+				</div>
+			</div>		</dd>
+	</dl>
+</div>
+										<div class="offcampusDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="offcampus" id="resume_offcampus" style="display:none;">
+	
+	<dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="out_school" style="font-size:none"></a>
+			<span><div class="resume_lang_out_school" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">校外实践</div><div class="Border resume_line" for-id="out_school"></div></span>
+		</dt>
+		<dd class="resume_append_area" for-model="offcampus">
+			<div class="baseContent baseDel resume_item_items resume_delete_area offcampus_ offcampus_0" for-id="900425">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="offcampus_msg baseBorder" contenteditable="false" for-key="offcampus_time">2011.09-2015.05</div></span>
+					<span class="conTitle_company"><div class="offcampus_msg baseBorder" contenteditable="false" for-key="offcampus_name">北京火原跳动有限公司</div></span>
+					<span class="conTitle_post"><div class="offcampus_msg baseBorder" contenteditable="false" for-key="offcampus_job">android实习生</div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					
+					<div class="conDisc baseBorder offcampus_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="offcampus_content">
+					主要参与布局文件的编写 &nbsp;对布局优化 &nbsp;控件实现积累的大量经验 &nbsp;熟悉整个开发流程					</div>
+				</div>
+			</div>		</dd>
+	</dl>
+</div>
+										<div class="workDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" id="resume_work">
+	
+	<dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="work" style="font-size:none"></a>
+			<span><div class="resume_lang_work" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">工作经历</div><div class="Border resume_line" for-id="work"></div></span>
+		</dt>
+		<dd class="resume_append_area" for-model="work">
+			<div class="baseContent baseDel resume_item_items resume_delete_area work_ work_2" for-id="987728" style="border-color: transparent; border-width: 1px; border-style: dashed;">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="work_msg baseBorder" contenteditable="false" for-key="work_time">2016.06-至今</div></span>
+					<span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="false" for-key="work_name">北京安否农业科技有限公司</div></span>
+					<span class="conTitle_post"><div class="work_msg baseBorder" contenteditable="false" for-key="work_job">任职岗位：安卓开发工程师</div></span>
+					<span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="false" for-key="work_name">项目名称：安否食品</div></span>
+					<span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="false" for-key="app_url">项目地址：<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.anfou">http://a.app.qq.com/o/simple.jsp?pkgname=com.anfou</a></div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					<div class="conDisc baseBorder work_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="work_content">
+					<p></p><p>1、实现社区首页多布局样式动态展示；</p><p>2、实现安博详情页面recyleview多布局切换和下拉刷新上拉分页功能；</p><p>3、架构APP内列表样式的基类，减少重复代码；</p><p>4、实现加好友聊天，创建聊天群，发语音，发小视频功能；</p><p>5、接入支付宝支付 微信支付 友盟统计 极光推送SDK；</p><p>6、使用packer-ng-plugin实现多渠道打包，比传统gradle打包快了10倍；</p><p>7、参与实现weex跨平台框架接入；</p>					</div>
+				</div>
+			</div>
+			<div class="baseContent baseDel resume_item_items resume_delete_area work_ work_1" for-id="989942" style="border-color: transparent; border-width: 1px; border-style: dashed;">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="work_msg baseBorder" contenteditable="false" for-key="work_time">2015.06-2016.06</div></span>
+					<span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="false" for-key="work_name">北京有为科技有限公司</div></span>
+					<span class="conTitle_post"><div class="work_msg baseBorder" contenteditable="false" for-key="work_job">任职岗位：安卓开发工程师</div></span>
+					<span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="false" for-key="work_name">项目名称：美家</div></span>
+					<span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="false" for-key="app_url">项目地址：<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.youwe.dajia">http://a.app.qq.com/o/simple.jsp?pkgname=com.youwe.dajia</a></div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					<div class="conDisc baseBorder work_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="work_content">
+					<p></p><p>1、参与app框架搭建,接入volley网络请求框架；</p><p>2、自定义view实现商品标签，自定义view实现刷新效果和loading状态；</p><p>3、TableLayout实现多fragment切换；</p><p>4、架构APP和H5对接Scheme方案；</p><p>5、公司是纯技术型公司，CEO为原百度贴吧项目经理，CTO为搜狗搜索技术总监，公司大部分人是alibaba背景，公司会定期举行技术分享，在这段工作期间学到了很多技术经验</p>				               	</div>
+				</div>
+			</div><div class="baseContent baseDel resume_item_items resume_delete_area work_ work_1" for-id="987728" style="border-color: transparent; border-width: 1px; border-style: dashed;">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="work_msg baseBorder" contenteditable="false" for-key="work_time">2014.06-2015.03</div></span>
+					<span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="false" for-key="work_name">北京火原跳动有限公司</div></span>
+					<span class="conTitle_post"><div class="work_msg baseBorder" contenteditable="false" for-key="work_job">任职岗位：安卓开发实习</div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					
+					<div class="conDisc baseBorder work_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="work_content">
+					主要参与布局文件的编写 &nbsp;对布局优化 &nbsp;控件实现积累的大量经验 &nbsp;熟悉整个开发流程						</div>
+				</div>
+			</div>		</dd>
+	</dl>
+</div>
+										<div class="itemDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="item" id="resume_item">
+	
+	<!-- <dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="project" style="font-size:none"></a>
+			<span><div class="resume_lang_project" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">项目经验</div><div class="Border resume_line" for-id="project"></div></span>
+		</dt>
+		<dd class="resume_append_area" for-model="item">
+			<div class="baseContent baseDel resume_item_items resume_delete_area item_ item_0" for-id="892343">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="item_msg baseBorder" contenteditable="false" for-key="item_time">2016.07-至今</div></span>
+					<span class="conTitle_company"><div class="item_msg baseBorder" contenteditable="false" for-key="item_name">项目名称：安否食品</div></span>
+					<span class="conTitle_post" style="min-height:23px;"><div class="item_msg baseBorder" contenteditable="false" for-key="item_title">项目职责：安卓研发</div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					
+					<div class="conDisc baseBorder item_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="item_content">
+					项目涵盖了即时通讯，直播，资讯，支付，地图等相关领域。应用宝可搜安否食品下载。					</div>
+				</div>
+			</div><div class="baseContent baseDel resume_item_items resume_delete_area item_ item_1" for-id="894361">
+				
+				<div class="conTitle">
+					<span class="conTitle_time"><div class="item_msg baseBorder" contenteditable="false" for-key="item_time">2015.07-2016.06</div></span>
+					<span class="conTitle_company"><div class="item_msg baseBorder" contenteditable="false" for-key="item_name">项目名称：美家</div></span>
+					<span class="conTitle_post" style="min-height:23px;"><div class="item_msg baseBorder" contenteditable="false" for-key="item_title">项目职责：安卓研发</div></span>
+				</div>
+				<div class="baseDel_ resume_delete_area_">
+					
+					<div class="conDisc baseBorder item_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="item_content">
+					<p>一款家居家装类的产品，项目包括资讯列表，图片处理，瀑布流，支付，自定义view。</p>					</div>
+				</div>
+			</div>		</dd>
+	</dl> -->
+</div>
+										<div class="honorDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="honor" id="resume_honor" for-key="honor" style="display:none;">
+	
+	<dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="honor" style="font-size:none"></a>
+			<span><div class="resume_lang_honor" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">奖项荣誉</div><div class="Border resume_line" for-id="honor"></div></span>
+		</dt>
+		<dd>
+			<div class="baseContent">
+				<div class="conDisc baseBorder resume_lang_honor_value resume_value honor_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="honor_content" for-id="870746">
+				<p>第一名</p><p>品牌管理，市场营销</p><p>销售数据分析</p><p>广告创意策划</p>				</div>
+			</div>
+		</dd>
+	</dl>
+</div>
+										<div class="selfDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="self" id="resume_self" for-key="self">
+	
+	<dl class="clearfix">
+		<dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="self" style="font-size:none"></a>
+			<span><div class="resume_lang_self" contenteditable="false" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">自我评价</div><div class="Border resume_line" for-id="self"></div></span>
+		</dt>
+		<dd>
+			<div class="baseContent">
+				<div class="conDisc baseBorder resume_lang_self_value self_msg" contenteditable="false" data-toggle="tooltip" data-placement="top" title="" for-key="self_content" for-id="919296">
+					<p>1、深度互联网从业人员，对互联网保持高度的敏感性和关注度，对于新技术具有非常高的热情，喜欢钻研，并且享受研发与学习带来的乐趣；</p><p>2、衷情于互联网技术应用，并且渴望寻找一个共同成长，互帮互助，互相学习的团队；</p><p>3、追求开发高品质产品、编写高质量的代码；</p><p>4、熟悉产品开发流程，有很强的产品规划、需求分析、交互设计能力，能独立承担APP开发工作；</p>				</div>
+			</div>
+		</dd>
+	</dl>
+</div>
+								
+				
+			</div>
+			<div class="fbottom_bg"></div>
+		</div></div><ul class="rightbtn ctboxs resumeCtro">
+    <!----<li><a href="javascript:;" id="make_resume">打印<br>简历</a></li>--->
+</ul>
+
+<div class="dispage_dialog_box">
+        		
+	<div class="dialog_body">
+		<ul class="chooseWay clearfix">
+			<li>
+				<span class="span_bg1"></span>
+				<a href="javascript:;" id="downpdf">PDF下载</a>
+        					
+			</li>
+			<li>
+				<span class="span_bg2"></span>
+				<a href="javascript:;" id="downimg">图片下载</a>
+        					
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="modal-content none" id="resume_url_div">
+	<div class="jl-scjl-hd">
+		<div class="img"><img src="http://img.jiaobu365.com/picture/2016-06-13/575e135b2432e.jpg" width="90" height="128"></div>
+		<div class="text">
+			<div class="title"><input type="text" name="resume_title" id="webresumeTitle" value="小步的简历"></div>
+			<p class="time">创建于2017-04-27 15:30       最后一次修改<span id="resume_update_time">2017-05-02 11:33</span></p>
+			<p class="mb-name">使用模板：  <span>羊皮纸质感底纹简历模板</span></p>
+		</div>
+	</div>
+	<div class="jl-scjl-bd">
+		<p class="name"><span>个性域名：</span>请为你的简历设置个性域名</p>
+		<div class="gxym_div">
+			<p><span><i>http://www.jiaobu365.com/resume/</i><input type="text" id="visitid" name="visitid" value="5907fe19a51a3" issubmitflag="false" maxlength="20" placeholder="请输入个性域名（英文或数字）"><i>.html</i></span></p>
+		</div>	
+	</div>
+	<div class="jl-btn"><a id="resume_url" href="javascript:void(0);">生成简历</a></div>
+</div>
+<script src="http://ss.jiaobu365.com/js/jquery.flexslider-min.js" type="text/javascript"></script>
+<div class="fkmains pptanim pptlayer none contbox">
+    <div class="closed"></div>
+    <div class="banner fl">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background:url(http://ss.jiaobu365.com/home/images/pay/banner1.png) no-repeat center center;"></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="mainct fr pr">
+        <div class="title"><i>请选择充值数额：</i><span>客服电话：400-601-5752<a <a="" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2850203307&amp;site=qq&amp;menu=yes" target="_blank">联系客服</a></span></div>
+        <div class="contm">
+            <ul class="tcul clearfix">
+                <li class="on" data-value="30">
+                    <div class="xz">
+                        <div class="mun"><i>30</i>金币</div>
+                        <div class="wd1 wd"><em>送</em><span><ins class="tipstool" title="全站模板 6折 下载"><i>20</i>金币</ins></span></div>
+
+                        
+                    </div>
+                    <div class="icon"><img src="http://ss.jiaobu365.com/home/images/pay/tureico.png"></div>
+                </li>
+                <li data-value="50">
+                    <div class="xz">
+                        <div class="mun"><i>50</i>金币</div>
+                        <div class="wd2 wd"><em>送</em><span><ins class="tipstool" title="全站模板 4折 下载"><i>50</i>金币</ins><br><ins class="tipstool" title="可学习变色龙课堂课程"><i>25元</i>学习币</ins><br><ins class="tipstool" title="可用于兑换礼品"><i>10</i>礼金</ins></span></div>
+
+                        
+                    </div>
+                    <div class="icon"><img src="http://ss.jiaobu365.com/home/images/pay/tureico.png"></div>
+                </li>
+                <li data-value="100">
+                    <div class="xz">
+                        <div class="mun"><i>100</i>金币</div>
+                        <div class="wd2 wd"><em>送</em><span><ins class="tipstool" title="全站模板 3.3折 下载"><i>150</i>金币</ins><br><ins class="tipstool" title="可学习变色龙课堂课程"><i>50元</i>学习币</ins><br><ins class="tipstool" title="可用于兑换礼品"><i>25</i>礼金</ins></span></div>
+                        
+                    </div>
+                    <div class="icon"><img src="http://ss.jiaobu365.com/home/images/pay/tureico.png"></div>
+                </li>
+                <li data-value="200">
+                    <div class="xz">
+                        <div class="mun"><i>200</i>金币</div>
+                        <div class="wd3 wd"><em>送</em><span><ins class="tipstool" title="全站模板 3折 下载"><i>300</i>金币</ins><br><ins class="tipstool" title="可学习变色龙课堂课程"><i>125元</i>学习币</ins><br><ins class="tipstool" title="简历定制时抵扣"><i>50元</i>定制券</ins><br><ins class="tipstool" title="可用于兑换礼品"><i>60</i>礼金</ins></span></div>
+
+                        
+                    </div>
+                    <div class="icon"><img src="http://ss.jiaobu365.com/home/images/pay/tureico.png"></div>
+                </li>
+            </ul>
+            <div class="zftle">
+                <i>请选择充值方式：</i>
+                <span><a href="javascript:;" class="on">支付平台</a></span>
+            </div>
+            <ul class="zfstyle clearfix">
+                <li class="on" data-value="2"><i><img src="http://ss.jiaobu365.com/home/images/pay/zfico1.png"></i><div class="icon"><img src="http://ss.jiaobu365.com/home/images/pay/tureico.png"></div></li>
+                <li data-value="1"><i><img src="http://ss.jiaobu365.com/home/images/pay/zfico2.png"></i><div class="icon"><img src="http://ss.jiaobu365.com/home/images/pay/tureico.png"></div></li>
+            </ul>
+            <div class="btns rechargemoney">
+                <span>应付金额：<i>30</i>元<em>(原价50元≈6折)</em></span>
+                <a href="javascript:;" id="recharge">确认支付</a>
+            </div>
+        </div>
+        <div class="lxkf">
+            <ul>
+                <li>金币通用于脚步网后续面试题库、猎头、测评等增值服务。</li>
+                <li>学习币可无限制购买抵扣<a href="http://edu.ppt20.com" target="_blank" style="color:#59cdfa">变色龙课堂</a>任意课程。</li>
+				<li>礼金用于脚步网礼品兑换服务<a href="/Goods/index.html" target="_blank" style="color:#59cdfa">去查看</a>。</li>
+                <li>充值即时到账，立即可用。客服电话：400-601-5752 <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2850203307&amp;site=qq&amp;menu=yes" target="_blank">客服QQ:800138264 (点击交谈)</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="xzstyle pptanim pptlayer none" id="paycont">
+    <dl>
+        <dd><a href="javascript:;" class="a1">直接购买<i>5.00元</i></a></dd>
+        <dt class="none"><a href="javascript:;" id="wxpayment"><img src="http://ss.jiaobu365.com/home/images/payico1.jpg"></a><a href="javascript:;" id="alipayment"><img src="http://ss.jiaobu365.com/home/images/payico2.jpg"></a></dt>
+        <dd><a href="javascript:;" class="a2">充值购买<i>≈1.5元</i></a></dd>
+    </dl>
+    
+</div>
+<div class="graybg none"></div>
+<div class="none">
+    <form action="/pay/dopay.html" method="post" id="payform" target="_blank">    
+       <input type="hidden" id="payment" name="payment" value="3">
+       <input type="hidden" id="trade_sn" name="trade_sn" value="">
+       <input type="hidden" name="paytype" value="2">   
+    </form>
+    <form action="/pay/recharge.html" method="post" id="rechargeform" target="_blank">    
+       <input type="hidden" id="rechargepayment" name="payment" value="2">
+       <input type="hidden" id="rechargeamount" name="amount" value="30">
+          
+    </form>
+</div>
+<div class="ctkmain4 none" id="payResume"> 
+     
+    <div class="ctpay">
+        <span>需要扣除：<i>5.00金币</i></span><span>当前余额：<i id="balance"></i>金币</span>
+    </div>
+   
+</div>
+
+<script>
+var  indexi="";
+$(function(){
+
+$(".tcul li").click(function(){
+    var amount=$(this).data('value');
+    var text="";
+    if(amount==30){
+        text="(原价50元≈6折)";
+    }else if(amount==50){
+        text="(原价125元≈4折)";
+    }else if(amount==100){
+       text="(原价300元≈3.3折)";
+    }else if(amount==200){
+       text="(原价665元≈3折)";
+    }
+    $("#rechargeamount").val(amount);
+    $(".rechargemoney i").text(amount);
+    $(".rechargemoney em").text(text);
+    $(this).addClass("on").siblings().removeClass("on");
+});
+$("#recharge").click(function(){
+    $(".fkmains").hide();
+    $(".graybg").hide();
+    $("#rechargeform").submit();
+})
+$(".zfstyle li").click(function(){
+    var payment=$(this).data('value');   
+    $("#rechargepayment").val(payment);   
+    $(this).addClass("on").siblings().removeClass("on");
+});
+$(".a1").click(function(){
+   
+    $("#paycont dt").toggle();
+});
+$(".a2").click(function(){
+    layer.close(indexi); 
+    $(".fkmains").show();
+    $(".graybg").show();
+});
+$(".closed").click(function(){
+    $(".fkmains").hide();
+    $(".graybg").hide();
+});
+$("#wxpayment").click(function(){
+    $("#payment").val(2);
+    layer.close(indexi); 
+    $("#payform").submit();
+});
+$("#alipayment").click(function(){
+    $("#payment").val(1);
+    layer.close(indexi); 
+    $("#payform").submit();   
+});
+$("#down_resume").click(function(){    
+    var id=3711561;
+	var loading = layer.load(1, {time: 10*1000,shade: [0.5,'#000']});
+    
+	
+	$.post("/Order/checkOrd_ajax.html", {id:id,type:2}, function(data){
+		if(data.status==1){
+            
+            layer.open({
+                title:'简历模板支付',
+                type:1,
+                area:['400px','220px'],                  
+                content:$("#payResume"),
+                btn:['确认支付','取消'],
+                success:function(layero,index){
+                    $("#trade_sn").val(data.trade_sn);
+                    $("#payment").val(3);
+                    layero.find("#balance").text(data.balance);
+                },
+                btn1:function(){
+                    $("#payform").submit();
+					layer.closeAll();
+                },
+                
+            });
+           
+        }else if(data.status==5){
+            
+					layer.open({
+						title:'下载简历',
+					    type:1,
+						content:$(".dispage_dialog_box"),
+						area:['610px','auto'],
+  		
+					});
+            
+        }else if(data.status==-9){
+        
+              /*indexi =  layer.open({
+                title:'您当前余额不足，请选择',
+                type:1,
+                area:['478px','295px'],                  
+                content:$("#paycont"),
+                btn:false,
+                success:function(layero){
+                    $("#trade_sn").val(data.trade_sn);
+                    $("#payment").val(1);
+                }
+                //btn1:function(){
+                 //   $("#payform").submit();
+
+                //},
+                
+            });*/
+			layer.msg("你的余额不足, 请充值",{icon: 2,time: 1000},function () {
+				$(".fkmains").show();
+    			$(".graybg").show();
+			});
+        }else{
+            layer.msg(data.msg,{time:2000});
+        }
+        
+   }, "json");
+   layer.close(loading); 
+});
+
+
+});
+</script>
+<script>
+$(function(){
+	$(".editBtn").remove();
+	$(".experbtn").remove();
+	$(".resumePageBreak").remove();
+	$(".resume_delete_").remove();
+	$(".resume_delete").remove();
+	$(".resume_custom_delete").remove();
+	$(".resume_drag_delete").remove();
+	$(".resume_drag_move").remove();
+	$("#change_avatar").remove();
+	$('.resume_html input').attr("readonly",true);
+	$(".conDisc").attr("title",'');
+	$("div[contenteditable]").attr("contenteditable",false);
+	$("span[contenteditable]").attr("contenteditable",false);
+	//下载简历
+
+	
+		$("#downpdf").click(function(){
+			var res_id = 3711561;
+			layer.closeAll();
+				var loading = layer.load(1, {
+			  shade: [0.5,'#000'] //0.1透明度的白色背景
+			})
+			
+			$.post("/Resume/createdown.html&t="+$.now(),{res_id:res_id,type:'pdf'},function(data){
+				if(data.status==1){
+						layer.close(loading);
+						window.location.href=data.url;
+				}else{
+					layer.close(loading);
+					layer.msg(data.msg,{time:2000});
+				}
+			});
+		
+		});
+		$("#downimg").click(function(){
+		var res_id = 3711561;
+			layer.closeAll();
+				var loading = layer.load(1, {
+			  shade: [0.5,'#000'] //0.1透明度的白色背景
+			})
+			
+			$.post("/Resume/createdown.html&t="+$.now(),{res_id:res_id,type:'jpg'},function(data){
+				if(data.status==1){
+						layer.close(loading);
+						window.location.href=data.url;				
+				}else{
+					layer.close(loading);
+					layer.msg(data.msg,{time:2000});
+				}
+			});
+		
+		});
+	//打印简历
+	$("#make_resume").click(function(){
+		var _height = $(".bodybg").height();
+		var res_id = 3711561;
+		$.ajax({
+		   type: "POST",
+		   url: "/Resume/change_height.html",
+		   data : {"res_id":res_id,"height":_height},
+		   success: function(data){
+				if(data.error == 1)
+				{
+					alert("系统繁忙,  请稍候重试");
+				}else if(data.ok == 1)
+				{
+					window.location.href="/Home/Make/index/id/"+res_id+".html"; 
+				}
+		   }
+		});
+	});
+	
+	//设置简历
+	$("#setup_resume").click(function(){
+		resume_url = layer.open({
+		  type: 1,
+		  title:false,
+		  zIndex :66666666,
+		  skin: 'layui-layer-rim', //加上边框
+		  area: ['750px', '500px'], //宽高
+		  content: $("#resume_url_div")
+		});	
+	});
+	//确认简历url
+	$("#resume_url").live('click',function(){
+		var visitid = $("#visitid").val();
+		var res_id=3711561;
+		visitid = $.trim(visitid);
+		var reg = /^[A-Za-z0-9]+$/;
+		var resume_title = $("#webresumeTitle").val();
+		resume_title = $.trim(resume_title);
+		if (!reg.test(visitid))
+		{
+			layer.msg('输入内容只能为字母和数字',{zIndex:66666667});
+			return false;
+		}
+		if(visitid.length < 4 || visitid.length>20)
+		{
+			layer.msg('输入长度只能为4-20位',{zIndex:66666667});
+			return false;
+		}			
+		$.ajax({
+		   type: "POST",
+		   url: "/Home/Resume/setup_url",
+		   data : {"resume_url" : visitid,"res_id":res_id,'resume_title':resume_title},
+		   success: function(data){
+				if(data.error == 1)
+				{
+					layer.msg(data.msg,{zIndex:66666667});
+				}else if(data.ok == 1)
+				{
+					layer.msg(data.msg,{zIndex:66666667});
+					window.location.href = "/resume/"+data.resume_url;
+				}
+		   }
+		});
+		
+	});
+	
+	 var AllHet = $(window).height();
+	   var mainHet= $('.resumeCtro').height();
+	   var fixedTop = (AllHet - mainHet)/2
+	   $('ul.resumeCtro li.rli').click(function(){
+			var ind = $('ul.resumeCtro li.rli').index(this)+1;
+			var topVal = $('#resume0'+ind).offset().top;
+			$('body,html').animate({scrollTop:topVal},1000)
+		})
+		$('.goTop a').click(function(){
+			$('body,html').animate({scrollTop:0},1000)
+			})
+	   $(window).scroll(scrolls)
+	   scrolls()
+	   function scrolls(){
+		   var f1,f2,f3,f4,bck;
+		   var fixRight = $('ul.resumeCtro li.rli');
+		   var blackTop = $('.goTop a')
+		   var sTop = $(window).scrollTop();
+			if(document.getElementById("resume01") != null)
+			{
+				f1 = $('#resume01').offset().top;
+			}
+			if(document.getElementById("resume02") != null)
+			{
+				f2 = $('#resume02').offset().top;
+			}
+			if(document.getElementById("resume03") != null)
+			{
+				f3 = $('#resume03').offset().top;
+			}
+			if(document.getElementById("resume04") != null)
+			{
+				f4 = $('#resume04').offset().top;
+			}
+		
+		   if(sTop<=f2-100){
+			   blackTop.fadeOut(300).css('display','none')
+			   }
+		   else{
+			   blackTop.fadeIn(300).css('display','block')
+			   }
+		   
+		   if(sTop>=f1){
+			   fixRight.eq(0).addClass('cur').siblings().removeClass('cur');
+			   }
+		   if(sTop>=f2-100){
+			   fixRight.eq(1).addClass('cur').siblings().removeClass('cur');
+			   }
+		   if(sTop>=f3-100){
+			   fixRight.eq(2).addClass('cur').siblings().removeClass('cur');
+			   }
+		   if(sTop>=f4-100){
+			   fixRight.eq(3).addClass('cur').siblings().removeClass('cur');
+			   }
+		
+	     }
+
+		 
+});
+</script>
+</body></html>
