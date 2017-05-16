@@ -1,0 +1,52 @@
+
+.baseditBar .mobanBar .editBox .otherList li:nth-child(4){display:none;}
+.baseditBar .mobanBar .editBox .otherList li:nth-child(5){display:none;}
+
+/*æ¨¡æ¿ç»“æž„*/
+.baseStyle{padding:0px;}
+.baseStyle .divLeft{margin:0px;width:275px;float:left;min-height:1556px;height:auto;padding:0;}
+.baseStyle .divRight{width:745px;float:left;height:auto;margin-top:30px;}
+.baseStyle .positonDiv{padding:0px;float:left;width:100%;}
+.msgDiv.baseItem .icon.resume_focus:after{width:28px;height: 28px;top: 1px;left: -7px;}
+.hobbyicon .icon.resume_focus:after{width: 40px;height:40px;top:15px;left: 20px;}
+.baseItem .icon.resume_focus:after{width: 45px;height: 45px;top: 11px;left: -3px;}
+
+/*editBtn*/
+.baseStyle .baseItem .editBtn{left:-50px;}
+.custDel .cust_delete{top: 10px;left: 1px;}
+
+/*å¤´åƒæ¨¡å—*/
+.baseStyle .headDiv{width:150px;height:200px;margin:50px auto;position: relative;overflow: hidden;border:6px solid #000;padding:6px;}
+.baseStyle .headDiv img{display: block;cursor:pointer;}
+.baseStyle .headDiv .headNotice{position: absolute;cursor:pointer;width: 100%;height: 100%;background-color: rgba(0,0,0,.3);text-align: center;padding-top: 164px;color: rgba(255,255,255,.5); opacity: 0;}
+.baseStyle .headDiv:hover .headNotice{opacity:1;}
+
+/*åŸºæœ¬ä¿¡æ¯æ¨¡å—*/
+.baseStyle .msgDiv{padding:0;float:left;width:100%;padding-left:20px;margin:0px 0px 30px 0px;}
+.baseStyle .msgDiv .editBtn{left:-25px;}
+.baseStyle .msgDiv .baseMsg{height:24px;line-height:24px;color:#000;margin-bottom:0px;}
+.baseStyle .msgDiv .baseMsg a{display: inline-block;font-size:16px;margin-right:4px;vertical-align: middle;color:#828282;height:31px;float: left;padding-top: 3px;display:none;}
+.baseStyle .msgDiv .baseDel .delete{top:6px;left:-21px;font-size: 16px;padding-left:11px;}
+.baseStyle .msgDiv input{width:100%;color:#000;height:24px;float: left;}
+
+/*å§“åã€æ±‚èŒæ„å‘*/
+.baseStyle .nameDiv{position:relative;padding-left:20px;margin:0px;text-align:left;color:#000;}
+.baseStyle .nameDiv h1{display:block;}
+.baseStyle .nameDiv h2{display:block;margin-top:35px;}
+
+/*é€šç”¨ä¿¡æ¯*/
+.baseStyle .baseItem dl{padding:0px;overflow:initial;float:left;}
+.baseStyle .baseItem dl dt{padding:0 0 0 7px;position:relative;overflow: initial;width:100%;float:left;height:35px;}
+.baseStyle .baseItem dl dd{padding:10px 83px 14px 15px;width:100%;float:left;margin:0px;}
+.baseStyle .baseItem dl dt a{position: absolute;font-size:60px;left:-55px;color:#000;top:0px;height: 73px;background: #fff;overflow: hidden;display:none;}
+.baseStyle .baseItem dl dt span{height:auto;line-height:35px;padding:0px;color:#000;font-weight:normal;margin-left:13px;}
+.baseStyle .baseItem dl dt span div.Border{position:absolute;top: 34px;left:212px;width:870px;display: none;}
+.baseStyle .baseItem .baseContent{margin:0px;color:#000;}
+.baseStyle .baseItem .baseContent .conTitle span{color:#000;}
+.baseStyle .baseItem .baseContent .conTitle span.conTitle_time{width:180px;}
+.baseStyle .baseItem .baseContent .conTitle span.conTitle_company{width:460px;}
+.baseStyle .baseItem .baseContent .conTitle span.conTitle_post{width:265px;}
+
+.jm0088_j1{background:url(http://ss.jiaobu365.com/home/images/jm0088/j1_bg.jpg) repeat-y;}
+.jm0088_j2{background:urlhttp://ss.jiaobu365.com/home/images/jm0088/j2_bg.jpg) repeat-y;}
+.jm0088_j3{background:url(http://ss.jiaobu365.com/home/images/jm0088/j3_bg.jpg) repeat-y;}
